@@ -1,0 +1,439 @@
+*{
+	box-sizing: border-box;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: Roboto, sans-serif;
+	background-color: #ddd;
+	margin: 0;
+}
+
+img, iframe{
+	max-width: 100%;
+}
+
+
+main{
+	
+}
+
+/* ========================== *\
+		  H E A D E R
+\* ========================== */
+
+
+.mr-header{
+	background-color: #00f;
+	padding: 10px 30px;
+	
+/*	position: sticky;
+	top: 0;*/
+}
+
+	.mr-header__content{
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.mr-header__title{
+		text-align: center;
+		color: #fff;
+		font-family: Pattaya, sans-serif;
+		font-size: 26px;	
+	}
+
+	.mr-header__logo{
+		background-color: #fff;
+		color: tomato;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		font-size: 23px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+	}
+
+	.mr-header__nav{
+		margin-left: auto;
+	}
+
+
+/* ========================== *\
+		   M E N U
+\* ========================== */
+
+
+.mr-menu{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+.mr-menu__link{
+	display: inline-block;
+	padding: 5px 15px;
+	margin: 0 25px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: background-color 300ms;
+}
+
+.mr-menu__link:hover{
+	background-color: tomato;
+}
+
+
+
+.activo{
+	background-color: tomato;
+}
+
+/* ========================== *\
+	  S L I D E S H O W
+\* ========================== */
+
+.mr-slideshow .slick-prev{
+	left:  25px;
+	z-index: 100;
+}
+
+.mr-slideshow .slick-next{
+	right:  25px;
+	z-index: 100;
+}
+
+/* ========================== *\
+		 B A N N E R
+\* ========================== */
+
+.mr-banner{
+	display: flex;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../images/playita.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	text-align: center;
+}
+
+	.mr-banner--bio{
+		background-image: url("../images/bikini.jpg");
+	}
+
+	.mr-banner--destinations{
+		background-image: url("../images/playita.jpg");
+	}
+
+	.mr-banner--contact{
+		background-image: url("../images/bikini-02.webp");
+	}
+
+	.mr-banner__title{
+		font-size: 50px;
+		font-family: Pattaya, sans-serif;
+		color: tomato;
+	}
+
+	.mr-banner__content{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.mr-banner__btn{
+		border: none;
+		text-decoration: none;
+		display: inline-block;
+		background-color: tomato;
+		color: #fff;
+		padding: 10px 30px;
+		border-radius: 3px;
+		font-weight: black;
+		transition:  background-color 300ms;
+	}
+
+		.mr-banner__btn:hover{
+			background-color: #e3583f;
+		}
+
+	.mr-banner__btn--dark{
+		background-color: #00f;
+	}
+		.mr-banner__btn--dark:hover{
+			background-color: #03038b;
+		}
+
+/* ========================== *\
+		    B I O
+\* ========================== */
+
+.mr-bio{
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-bottom: 30px;
+	background-color: #fff;
+	border-radius: 60px;
+	transition: background-color 300ms;
+}
+
+	.mr-bio:hover{
+		background-color: #00f;
+		color: #fff;
+	}
+
+	.mr-bio:hover .mr-bio__img{
+		transform:  scale(2);
+	}
+
+	.mr-bio:hover .mr-bio__link{
+		color: tomato;
+	}
+
+
+	.mr-bio__media{
+		width: 50%;
+	}
+	.mr-bio__link{
+		color:  #00f;
+	}
+
+	.mr-bio__img{
+		display: block;
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		transition:  transform 300ms;
+	}
+
+	.mr-bio__text{
+		width: 50%;
+		padding-right: 40px;
+	}
+
+	.mr-bio__title{
+		color:  tomato;
+		font-size: 230%;
+		font-family: Pattaya;
+		margin-bottom: 0;
+	}
+
+/* ========================== *\
+		 S E C T I O N
+\* ========================== */
+
+.mr-section{
+	
+}
+
+.mr-section--dark{
+	background-color: #00f;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #fff;
+}
+
+.mr-section__container{
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mr-section__title{
+	color: #00f;
+	font-family: Pattaya, sans-serif;
+}
+
+	.mr-section__title--alt{
+		color: tomato;
+	}
+
+.mr-section__button{
+	text-decoration: none;
+	display: inline-block;
+	background-color: tomato;
+	color: #fff;
+	padding: 10px 30px;
+	border-radius: 3px;
+	font-weight: black;
+}
+
+
+/* ========================== *\
+		    P O S T
+\* ========================== */
+
+
+.mr-post{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.mr-post__title{
+		color: #00f;
+		font-family: Pattaya, sans-serif;
+	}
+
+	.mr-post__title--alt{
+		color: tomato;
+	}
+
+	.mr-post__text{
+		width: 48%;
+		text-align: justify;
+	}
+	.mr-post__media{
+		width: 48%;
+	}
+
+
+
+/* ========================== *\
+		  F O O T E R
+\* ========================== */
+
+
+.vc-footer{
+	background-color: #00f;
+	color: #fff;
+	padding: 30px;
+	text-align: center;
+}
+
+	.vc-footer__content{
+		font-weight: 800;
+	}
+
+	.vc-footer__link{
+		color: white;
+		background-color: tomato;
+		padding: 15px 40px;
+		border-radius:  30px;
+		text-decoration: none;
+		display: inline-block;
+		margin-top: 30px;
+	}
+
+
+
+/* ========================== *\
+		  T E A M
+\* ========================== */
+
+
+
+.mr-team{
+	display: flex;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	flex-wrap:  wrap;
+}
+
+	.mr-team__item{
+		width: 50%;
+	}
+
+	.mr-team__item--aboutus{
+		width: 33.33%;
+	}
+
+	.mr-team__img{
+		background-color: tomato;
+		border-radius: 50%;
+		max-width: 70%;
+	}
+		.mr-team__img--home{
+			background-color: #00f;
+		}
+
+	.mr-team__title{
+		color: tomato;
+		font-family: Pattaya, sans-serif;
+		font-size: 25px;
+		margin-bottom: 0;
+	}
+	.mr-team__role{
+		margin-top: 0;
+		font-weight: 800;
+		color: #00f;
+	}
+
+
+/* ========================== *\
+    C O N T A C T - F O R M
+\* ========================== */
+
+.mr-cform{
+	padding: 30px 0;
+}
+
+	.mr-cform__label{
+		display: block;
+		font-weight: 800;
+		padding: 4px 0;
+	}
+
+	.mr-cform__field{
+		width: 100%;
+		padding: 8px;
+		border:  none;
+		border-radius: 4px;
+		margin-bottom: 15px;
+	}
+
+		.mr-cform__field--ta{
+			height: 150px;
+		}
+
+	.mr-cform__button{
+		text-decoration: none;
+		display: inline-block;
+		background-color: tomato;
+		color: #fff;
+		padding: 10px 30px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition:  background-color;
+	}
+	.mr-cform__button:hover{
+		background-color: #e3583f;
+	}
+
+
+/* ========================== *\
+     R O W ( C O L U M N AS )
+\* ========================== */
+
+.mr-row{
+	display: flex;
+	justify-content: space-between;
+}
+
+	.mr-row__column{
+		width: 48%;
+	}
+
